@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>角色名稱生成器</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<style>
+  
+</style>
+<body class="body">
+  <form action="/" method="post">
+    <div class="card">
+      <div class="card-img"></div>
+      <h1 class="card-title">角色名稱生成器</h1>
+      <p class="card-text">
+        <% if (description.length) { %>
+          <%= description %>
+        <% } else { %>
+          <%= '???' %>
+        <% } %>
+      </p>
+      <input type="text" name="description" class="card-input" placeholder="填寫角色的風格ex:日式、歐美、文藝風、職業" />
+      <button type="submit" class="card-btn">送出</button>
+    </div>
+  </form>
+</body>
+
+</html>
